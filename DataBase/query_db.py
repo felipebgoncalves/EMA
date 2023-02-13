@@ -3,7 +3,7 @@ import DataBase.conection_db as db
 
 # FUNÇÃO PARA CONSULTAS NO BANCO DE DADOS
 # Uses st.experimental_memo to only rerun when the query changes or after 10 min.
-st.experimental_memo(ttl=600)
+st.cache_data(ttl=600)
 
 
 def consulta_dados(sql_SELECT):
