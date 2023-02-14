@@ -6,7 +6,8 @@ import psycopg2
 # @st.cache_resource
 def conexao_db():
     # USUÁRIO POSTGRES - ACESSA TODOS OS BANCOS
-    conn = psycopg2.connect(**st.secrets["postgres"])
+#     conn = psycopg2.connect(**st.secrets["postgres"])
+    conn = psycopg2.connect(**st.secrets.db_credentials)
 
     cur = conn.cursor()
 
