@@ -172,8 +172,8 @@ if input_button:
 
                 st.dataframe(df)
 
-                if input_button is not None:
-                    st.session_state['df'] = df
+#                 if input_button is not None:
+#                     st.session_state['df'] = df
 
                 # CONVERSÃO DO DATAFRAME PARA ARQUIVO CVS E DISPONIBILIZADO PARA DOWNLOAD
                 csv = convert_df(df)
@@ -196,8 +196,8 @@ if input_button:
 
                 st.dataframe(df)
 
-                if input_button is not None:
-                    st.session_state['df'] = df
+#                 if input_button is not None:
+#                     st.session_state['df'] = df
 
                 # CONVERSÃO DO DATAFRAME PARA ARQUIVO CVS E DISPONIBILIZADO PARA DOWNLOAD
                 csv = convert_df(df)
